@@ -22,6 +22,15 @@ const setupInput = function(conn) {
     else if (data === 'd'){
       conn.write("Move: right")
     }
+    else if (data === 'r'){
+      conn.write("Say: I'm going to get you!")
+    }
+    else if (data === 't'){
+      conn.write("Say: Snakes for nothing!")
+    }
+    else if (data === 'f'){
+      conn.write("Say: Muhahah!")
+    }
   }
   stdin.on('data', handleUserInput);
 }
